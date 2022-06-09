@@ -528,10 +528,15 @@ public class MainActivity extends AppCompatActivity implements OnViewHolderClick
         }
         return data;
     }
+    
+    int positionOfItem = -1;
 
     @Override
     public void onClickListener(int positionOfItem) {
         Toast.makeText(this, "onClickAtItem " + positionOfItem, Toast.LENGTH_SHORT).show();
+	
+	this.positionOfItem = positionOfItem;
+        customAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -543,32 +548,32 @@ public class MainActivity extends AppCompatActivity implements OnViewHolderClick
 
 
 ````java
-public class CustomAdapter extends BaseAdapter<Cidade> {
+ public class CustomAdapter extends BaseAdapter<Cidade> {
 
-    public CustomAdapter(List<Cidade> data, OnViewHolderClickListener itemClickListener) {
-        super(data, itemClickListener);
+        public CustomAdapter(List<Cidade> data, OnViewHolderClickListener itemClickListener) {
+            super(data, itemClickListener);
+        }
+
+        @Override
+        protected int getItemView() {
+            return R.layout.cidade_item;
+        }
+
+        @Override
+        public void onBindViewHolder(ClickableViewHolder holder, int position) {
+
+            final Cidade item = getItem(position);
+
+            ((TextView) holder.getViewById(R.id.nomeTextView)).setText(item.getNome());
+            ((TextView) holder.getViewById(R.id.ufTextView)).setText(item.getUf());
+
+            holder.itemView.setBackgroundColor(positionOfItem == position
+                    ? Color.parseColor("#CCCCCC")
+                    : Color.parseColor("#FFFFFF"));
+
+        }
+
     }
-
-    @Override
-    protected int getItemView() {
-        return R.layout.cidade_item;
-    }
-
-    @Override
-    protected int[] getResIdOfInflatedViews() {
-        return new int[]{R.id.nomeTextView, R.id.ufTextView};
-    }
-
-    @Override
-    public void onBindViewHolder(ClickableViewHolder holder, int position) {
-
-        final Cidade item = getItem(position);
-
-        ((TextView)holder.getViewById(getResIdOfInflatedViews()[0])).setText(item.getNome());
-        ((TextView)holder.getViewById(getResIdOfInflatedViews()[1])).setText(item.getUf());
-
-    }
-}
 ````
 
 ---
