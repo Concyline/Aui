@@ -1492,6 +1492,12 @@ in Manifest.xml
         }
 ````
 
+## String Format
+
+````java
+	Str.Format("SELECT * FROM CIDADES C WHERE C.NOME LIKE '{0}%' AND C.UF == '{1}'","INHU","GO");
+````
+
 ## MeasureIcon
 
 <img src="https://github.com/Concyline/Aui/blob/master/img/icon_measure.png" width="50%">
