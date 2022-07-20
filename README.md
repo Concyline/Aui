@@ -43,7 +43,7 @@ This library has 6 modules to aid Android development, speeding up the completio
    - [MeasureIcon](#MeasureIcon)
    - [EasyLocation](#EasyLocation)
    - [Send Intents](#Send-Intents)
-   - [String Format](#String Format)
+   - [String Format](#String-Format)
  * [CamPix](#CamPix)
  * [PhotoView](#PhotoView)
  * [Zoom Frame](#Zoom-Frame)
