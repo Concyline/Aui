@@ -1,6 +1,6 @@
 <img src="https://github.com/Concyline/Aui/blob/master/img/logo_projeto_novo.png" width="40%">
 
-This library has 6 modules to aid Android development, speeding up the completion of the application
+This library has 12 modules to Aid Android development, speeding up the completion of the application
 
  Features
 ------
