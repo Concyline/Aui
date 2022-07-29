@@ -1517,6 +1517,8 @@ in Manifest.xml
 
 ## PdfReport
 
+<img src="https://github.com/Concyline/Aui/blob/master/img/report.png" width="20%">
+
 In AndroidManifest.xml
 ````xml
  <provider
