@@ -1519,6 +1519,16 @@ in Manifest.xml
 
 <img src="https://github.com/Concyline/Aui/blob/master/img/report.png" width="20%">
 
+In res/xml/sdcard.xml
+````xml
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="external_files"
+        path="." />
+</paths>
+````
+
 In AndroidManifest.xml
 ````xml
  <provider
