@@ -1,6 +1,6 @@
 <img src="https://github.com/Concyline/Aui/blob/master/img/logo_projeto_novo.png" width="40%">
 
-This library has 12 modules to Aid Android development, speeding up the completion of the application
+This library has 13 modules to Aid Android development, speeding up the completion of the application
 
  Features
 ------
@@ -1680,8 +1680,8 @@ In Activity
                 arrayTable[1][2] = new ItemTable("Martins");
 
                 ItemTotalizer[] arrayTotalizer = new ItemTotalizer[2];
-                arrayTotalizer[0] = new ItemTotalizer("Toal de itens", "3");
-                arrayTotalizer[1] = new ItemTotalizer("Toal de valor", "5000,00");
+                arrayTotalizer[0] = new ItemTotalizer("Toal of itens", "3");
+                arrayTotalizer[1] = new ItemTotalizer("Toal of value", "5000,00");
 
                 PdfReport report = PdfReport.init(MainActivity.this, "android", Color.BLACK)
                         .title("Title of relatory", Location.CENTER, 18)
