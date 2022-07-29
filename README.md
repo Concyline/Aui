@@ -44,6 +44,8 @@ This library has 12 modules to Aid Android development, speeding up the completi
    - [EasyLocation](#EasyLocation)
    - [Send Intents](#Send-Intents)
    - [String Format](#String-Format)
+   - [Json to List or Object](#Json-to-List-or-Object)
+   - [GET Asset json file](#GET-Asset-json-file)
  * [CamPix](#CamPix)
  * [PhotoView](#PhotoView)
  * [Zoom Frame](#Zoom-Frame)
@@ -1497,6 +1499,17 @@ in Manifest.xml
 
 ````java
 	String value = Str.Format("SELECT * FROM CIDADES C WHERE C.NOME LIKE '{0}%' AND C.UF == '{1}'" , "INHU" , "GO");
+````
+
+## Json to List or Object
+````java
+     List<UF> lUF = Util.getListGson(assetJsonFile, UF.class);
+     
+     UF uf = Util.getObjectGson("{"nome": "Acre", "sigla": "AC"}", UF.class);
+````
+## GET Asset json file
+````java
+     String assetJsonFile = Util.assetJsonFile(this, "uf.json");
 ````
 
 ## MeasureIcon
