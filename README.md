@@ -1684,7 +1684,7 @@ In Activity
                 arrayTotalizer[0] = new ItemTotalizer("Toal of itens", "3");
                 arrayTotalizer[1] = new ItemTotalizer("Toal of value", "5000,00");
 
-                PdfReport report = PdfReport.init(MainActivity.this, "android", Color.BLACK)
+                PdfReport report = PdfReport.init(MainActivity.this, "And", "android", Color.BLACK)
                         .title("Title of relatory", Location.CENTER, 18)
                         .lineSeparator()
                         .imageIn("icon.jpg", Location.CENTER)
