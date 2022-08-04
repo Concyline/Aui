@@ -100,6 +100,7 @@ dependencies { <br />
 &emsp; &emsp; &emsp; implementation 'com.github.Concyline:Signature:>' [![](https://jitpack.io/v/Concyline/Signature.svg)](https://jitpack.io/#Concyline/Signature)<br />
 &emsp; &emsp; &emsp; implementation 'com.github.Concyline:Texto:>' [![](https://jitpack.io/v/Concyline/Texto.svg)](https://jitpack.io/#Concyline/Texto)<br />
 &emsp; &emsp; &emsp; implementation 'com.github.Concyline:Util:>' [![](https://jitpack.io/v/Concyline/Util.svg)](https://jitpack.io/#Concyline/Util)<br />
+&emsp; &emsp; &emsp; implementation 'com.github.Concyline:PdfReport:>' [![](https://jitpack.io/v/Concyline/PdfReport.svg)](https://jitpack.io/#Concyline/PdfReport)<br />
 }
 
 
