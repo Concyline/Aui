@@ -328,6 +328,12 @@ or
 
 ArrayAdapter<Object> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_dropdown_item_1line, array);
 editTextTitleAutoComplete.setAdapter(adapter);
+
+
+editTextTitleAutoComplete.setOnItemClickListener((parent, view, position, id) -> {
+      System.out.println(" " + editTextTitleAutoComplete.getAdapter().getItem(position));
+});
+
 ````
 
 ---
