@@ -304,7 +304,7 @@ searchLegenda.setInputTypeSearch(Constantes.textPassword);
 
 ### EditTextTitleAutoComplete
 
-<img src="https://github.com/Concyline/Aui/blob/master/img/pesquisasimples.png" width="50%">
+<img src="https://github.com/Concyline/Aui/blob/master/img/autocomplete.png" width="50%">
 
 ```xml
   <br.com.componentes.EditTextTitleAutoComplete
