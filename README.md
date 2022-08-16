@@ -175,7 +175,7 @@ android.enableJetifier=true
             app:tag="edittext"
             app:text="texto"
             app:requerido="true"
-	    app:titleRequerido="Digite um email válido!"/>
+	    app:legendaRequerido="Digite um email válido!"/>
 ```
 
 ---
