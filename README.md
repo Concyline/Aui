@@ -14,6 +14,7 @@ This library has 13 modules to Aid Android development, speeding up the completi
    - [Icon direita](#Icon-direita)
    - [TextViewTitle](#TextViewTitle)
    - [EditTextSearch](#EditTextSearch)
+   - [EditTextTitleAutoComplete](#EditTextTitleAutoComplete)
    - [Multiline](#Multiline)
    - [PassWord](#PassWord)
    - [EditTexCurrency](#EditTexCurrency)
@@ -299,6 +300,36 @@ editTextSearch.setOnClickListener(new View.OnClickListener() {
 // Custom inputType programmatically
 searchLegenda.setInputTypeSearch(Constantes.textPassword);
 ````
+---
+
+### EditTextTitleAutoComplete
+
+<img src="https://github.com/Concyline/Aui/blob/master/img/pesquisasimples.png" width="50%">
+
+```xml
+  <br.com.componentes.EditTextTitleAutoComplete
+        android:id="@+id/editTextTitleAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:coricon="@color/colorAccent"
+        app:iconRigth="@drawable/round_search_black_48dp"
+        app:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tamTitle="@dimen/tamLegendaEditTextUi"
+        app:title="Cidade" />
+```
+
+````java
+editTextTitleAutoComplete.setAdapter(new String[]{"goiania","goianesia","guarapari","guarulhos"});
+
+or
+
+ArrayAdapter<Object> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_dropdown_item_1line, array);
+editTextTitleAutoComplete.setAdapter(adapter);
+````
+
 ---
 ### Multiline
 
