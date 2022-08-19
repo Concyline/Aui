@@ -132,6 +132,7 @@ android.enableJetifier=true
             app:requestfocus="true"
             app:tag="edittext"
             app:text="texto"
+	    app:colorText="#FF00"
             app:title="Componente simples" />
 ```
 
@@ -156,6 +157,7 @@ android.enableJetifier=true
             app:tag="edittext"
             app:text="texto"
             app:requerido="true"
+	    app:colorText="#FF00"
 	    app:titleRequerido="Digite um CNPJ válido!"/>
 ```
 
@@ -176,6 +178,7 @@ android.enableJetifier=true
             app:tag="edittext"
             app:text="texto"
             app:requerido="true"
+	    app:colorText="#FF00"
 	    app:legendaRequerido="Digite um email válido!"/>
 ```
 
